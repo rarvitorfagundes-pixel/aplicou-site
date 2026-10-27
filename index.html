@@ -12,6 +12,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilo.css">
+<style>
+.lojas-titulo{font-weight:700;color:var(--suave);margin:0 0 12px}
+.lojas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.loja{display:flex;flex-direction:column;align-items:flex-start;min-width:170px;background:var(--tinta);color:var(--branco);padding:10px 22px;border-radius:14px;line-height:1.2;text-align:left}
+.loja small{font-size:13px;opacity:.85}
+.loja strong{font-size:20px;font-weight:800}
+</style>
 </head>
 <body>
 <header class="topo"><div class="caixa">
@@ -29,7 +36,11 @@
   <img src="img/icone-256.png" alt="Ícone do Aplicou" width="112" height="112">
   <h1>Aplicou</h1>
   <p class="frase">A gente lembra da sua dose por você.</p>
-  <span class="selo">Em breve no Google Play</span>
+  <p class="lojas-titulo">Em breve para Android e iPhone</p>
+  <div class="lojas">
+    <span class="loja"><small>Em breve no</small><strong>Google Play</strong></span>
+    <span class="loja"><small>Em breve na</small><strong>App Store</strong></span>
+  </div>
 </section>
 <section class="recursos" aria-label="O que o Aplicou faz">
   <div class="cartao"><h3>Lembrete no dia certo</h3><p>Aviso no dia e na hora da aplicação da sua caneta, como o seu médico prescreveu.</p></div>
